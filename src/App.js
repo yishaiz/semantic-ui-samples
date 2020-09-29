@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'semantic-ui-css/semantic.min.css';
+import Buttons from './Samples/Sample1-Buttons';
+import AnimatedButtons from './Samples/Sample2-animation-buttons';
+import Inputs from './Samples/Sample3-inputs';
+import Dropdown from './Samples/Sample4-dropdown';
+import 'semantic-ui-react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div>
+      <h3>
+        few smaples from:{' '}
+        <a href="https://react.semantic-ui.com/" 
+        rel="noopener noreferrer"
+        target='_blank'>
+          https://react.semantic-ui.com/
         </a>
-      </header>
+      </h3>
+      <Buttons></Buttons>
+      <hr />
+      <AnimatedButtons></AnimatedButtons>
+      <hr />
+      <Inputs></Inputs>
+      <hr />
+      <Dropdown></Dropdown>
     </div>
   );
 }
